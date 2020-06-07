@@ -1,3 +1,4 @@
+Back to [Main](README.md)
 
 [Current doc](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html)
 
