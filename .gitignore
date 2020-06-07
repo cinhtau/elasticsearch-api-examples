@@ -1,0 +1,7 @@
+.idea
+*.iws
+*.iml
+
+_site
+vendor
+Gemfile.lock

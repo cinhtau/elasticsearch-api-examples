@@ -1,0 +1,23 @@
+- title: Documentation
+  url: docs
+  links:
+    - title: "Getting Started"
+      url: "docs/start"
+    - title: "Indices"
+      children:
+        - title: Indices
+          url: "docs/cat-indices"
+        - title: Alias
+          url: "docs/alias"
+        - title: Reindex API
+          url: "docs/reindex"
+    - title: "Management"
+      children:
+        - title: Nodes
+          url: "docs/cat-nodes"
+        - title: Tasks
+          url: "docs/tasks"
+        - title: Shard Allocation
+          url: "docs/shard-allocation"
+        - title: Delete Data
+          url: "docs/delete"

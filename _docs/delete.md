@@ -1,14 +1,13 @@
-Back to [Main](README.md)
-
-# Delete Data
-
-There a various ways to delete data in Elasticsearch.
+---
+title: Delete Data
+description: There a various ways to delete data in Elasticsearch.
+---
 
 ## Delete Index
 
 This will delete the whole index. Replace myindex with the index name.
 
-```http
+```
 DELETE myindex
 ```
 
@@ -68,7 +67,7 @@ curl -XPOST "http://elasticsearch:9200/fo-log-2017.07.11/_delete_by_query" -H 'C
 This may be a long running task. You can always check with the Task API the current status.
 
 The console template
-```http
+```
 GET _tasks?detailed=true&actions=*/delete/byquery
 ```
 

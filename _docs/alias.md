@@ -1,5 +1,7 @@
-Back to [Main](README.md)
-
+---
+title: Alias
+description: Assign indices to an alias
+---
 [Current doc](https://www.elastic.co/guide/en/elasticsearch/reference/current/indices-aliases.html)
 
 ## Remove Indes from Alias

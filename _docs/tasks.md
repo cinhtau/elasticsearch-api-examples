@@ -1,6 +1,7 @@
-Back to [Main](README.md)
-
-# Task Management
+---
+title: Task Management
+description: Manage tasks within Elasticsearch
+---
 
 ## List all tasks
 

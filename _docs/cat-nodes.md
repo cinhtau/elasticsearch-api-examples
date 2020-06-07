@@ -1,6 +1,9 @@
-Back to [Main](README.md)
+---
+title: Nodes
+description: View node details
+---
 
-# Nodes
+## List Nodes
 
 Get Elasticsearch version and Java Version of each node
 

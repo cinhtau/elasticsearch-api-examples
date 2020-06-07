@@ -1,14 +1,17 @@
-Back to [Main](README.md)
+---
+title: Indices
+description: View index information
+---
 
 ## Catalog
 
 Get verbose output
-```http
+```
 GET _cat/indices?v
 ```
 
 Output
-```text
+```
 health status index                         uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 green  open   metrics-2017.02.08            2LjFJYDrSlifpNRTGfQODg   2   1    6715909            0      3.3gb          1.7gb
 ```
@@ -16,29 +19,29 @@ green  open   metrics-2017.02.08            2LjFJYDrSlifpNRTGfQODg   2   1    67
 ## Check master nodes
 
 Kibana Console
-```text
+```
 GET _cat/master?v
 ```
 
 Example Output
-```text
+```
 id                     host         ip           node
 mu7on18lTkCsuI2EeY1X0Q mtzhlrshld03 10.22.63.221 Setinal Rock
 ```
 ## Sorting on fields
 
 Get closed indices first
-```http
+```
 GET /_cat/indices?v&s=status:asc
 ```
 
 Get biggest indices
-```http
+```
 GET /_cat/indices?v&s=store.size:desc
 ```
 
 Output
-```text
+```
 health status index                         uuid                   pri rep docs.count docs.deleted store.size pri.store.size
 green  open   ep2-itu-2017.02.08            QQ2b6T5dTr6hOYitNhhEWw   1   1   51843464            0     46.5gb         22.2gb
 green  open   ep2-itu-2017.02.07            4nRKYhSRRDqRGMAVOZfDMg   1   1   23538256     21202000     35.5gb         17.7gb
@@ -47,7 +50,7 @@ green  open   ep2-itu-2017.02.06            7py8fEL7Qci3bsTmUvMsxA   1   1   166
 
 Get index by name (year), e.g. indices about crime.
 
-```text
+```
 GET _cat/indices/crimes-*?v&s=docs.count:desc
 
 health status index       uuid                   pri rep docs.count docs.deleted store.size pri.store.size
@@ -74,7 +77,7 @@ green  open   crimes-2002 r4qGw78-TmSTISGjAIbjIQ   1   0         21            5
 
 If you need only specific values, you can use the header option to select for instance only the index name.
 
-```http
+```
 GET _cat/indices/fo-log-2017*?h=index&s=index:asc
 
 fo-log-2017.05.25
@@ -85,11 +88,11 @@ fo-log-2017.05.27
 ## Check Mapping
 
 Check Mapping
-```http
+```
 GET index_name/_mapping
 ```
 
 Check Field Mapping
-```http
+```
 GET index_name/_mapping/field/field_name
 ```

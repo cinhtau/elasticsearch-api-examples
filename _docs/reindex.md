@@ -1,9 +1,7 @@
-Back to [Main](README.md)
-
-# Reindex Data
-
-* TOC
-{:toc}
+---
+title: Reindex Data
+description: Fix or reorganise data by reindexing them.
+---
 
 ## Reduce Shards
 

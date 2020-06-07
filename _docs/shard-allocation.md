@@ -1,6 +1,7 @@
-Back to [Main](README.md)
-
-# Shard Allocation
+---
+title: Shard Allocation
+description: Move shards between Nodes
+---
 
 ## Cluster Settings
 
@@ -60,7 +61,7 @@ curl -XPUT "http://vip-fo-test-es:9200/_cluster/settings" -H 'Content-Type: appl
 
 ### Disable shard allocation on a node
 
-```http
+```
 PUT /_cluster/settings
 {
   "transient" : {
@@ -71,7 +72,7 @@ PUT /_cluster/settings
 
 ### Reset setting
 
-```http
+```
 
 PUT /_cluster/settings
 {
