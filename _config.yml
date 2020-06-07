@@ -1,4 +1,4 @@
-theme: jekyll-theme-leap-day
+theme: jekyll-theme-hacker
 plugins:
   - jekyll-seo-tag
 google_analytics: UA-98721919-6
