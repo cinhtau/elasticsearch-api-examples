@@ -33,7 +33,7 @@ GET /_cat/nodes?v&h=name,ip,port,v,jdk,m
 
 Helpful during rolling cluster upgrades
 ```text
-name   ip          port v     jdk    m
+name ip          port v     jdk    m
 es73 172.22.0.73 9300 7.7.0 14     *
 es74 172.22.0.74 9300 7.7.0 14     -
 es72 172.22.0.72 9300 7.7.1 14.0.1 -
